@@ -2,10 +2,10 @@
 
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{xspace}
+\title{CAS 741: Problem Statement\\Translator: from description to C++ and \LaTeX\xspace code}
 
-\title{CAS 741: Problem Statement\\Translator: from description to C++ and \latex code}
-
-\author{Bo Cao, caob13}
+\author{Bo Cao, caob13@mcmaster.ca}
 
 \date{\today}
 
@@ -14,7 +14,12 @@
 \begin{document}
 
 \maketitle
+\section{Goal}
+The goal is to translate a set of user-written differential-algebraic equations (DAEs) to the corresponding C++ function and \LaTeX code. The C++ function has the signature required by DAETS, a DAE solver, and the \LaTeX code is an aligned equation environment containing all the equations.
 
+\section{Environment}
+This program is mainly designed to work under Ubuntu 18.04.3. Compatibility with other environments is possible, but not guaranteed nor tested.
+ 
 \begin{table}[hp]
 \caption{Revision History} \label{TblRevisionHistory}
 \begin{tabularx}{\textwidth}{llX}
